@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+  <head>
+  <style>td{border:solid;}</style>
+  <title>What's in the pocket?</title>
+  </head>
+    <body>
+  
+      <div><h1>Ravioli</h1></div>
+      <p>To make Papa Franku's Signiture ravioli, this is what you need to do.</p>
+      <ol>
+        <li>Place all of the ravioli ingredients into a small sauce pan,except the wonton wrappers, and turn the heat to low.</li>
+        <li>Cook the meat for about <i>10 minutes</i>, or until browned; you much stir this constantly and sometimes vigorously to keep the mixture smooth, no lumps!</li>
+        <li>Wet the edges of a wonton wrapper and place 1-1 1/2 tablespoons of the meat mixture in the center; top with another wonton skin and press all of the air out of the ravioli while you are pressing the edges together to make a tight seal.</li>
+        <li>Meanwhile, bring a large pot of salted water to a boil.</li>
+        <li>Place all of the sauce ingredients in a medium saucepan except the cheese and bring to a boil.</li>
+        <li>Add the ravioli to the boiling water and boil them, stirring occasionally for <i>5-8 minutes</i>.</li>
+        <li>Remove the sauce from the heat and add the cheddar cheese and salt and pepper to taste.</li>
+        <li>Toss the ravioli and sauce together in a large bowl and serve.</li>
+      </ol>
+      
+      <div><h2>Ingediants</h2></div>
+      <h3>Sauce</h3>
+      <ul>
+        <li><i>1 (12 ounce) can tomato soup, undiluted</i></li>
+        <li><i>1⁄2 cup water</i></li>
+        <li><i>1⁄2 cup tomato sauce</i></li>
+        <li><i>1⁄2 teaspoon garlic powder</i></li>
+        <li><i>1⁄2 teaspoon onion powder</i></li>
+        <li><i>1⁄4-1⁄2 teaspoon sugar</i></li>
+        <li><i>1 teaspoon dried parsley</i></li>
+        <li><i>1⁄4 cup cheddar cheese, grated</i></li>
+        <li><i>salt and pepper</i></li>
+      </ul>
+      
+        <table>
+          <tr>
+            <td>1 (12 ounce) can tomato soup, undiluted</td>
+            <td>1⁄2 cup water</td>
+            <td>1⁄2 teaspoon garlic powder</td>
+            <td>1⁄2 cup tomato sauce</td>
+          </tr>
+          <tr>
+            <td>1⁄4-1⁄2 teaspoon sugar</td>
+            <td>1 teaspoon dried parsley</td>
+            <td>1⁄4 cup cheddar cheese, grated</td>
+            <td>salt and pepper</td>
+          </tr>
+        </table>
+      
+      <div><h4>What your finished project is supposed to look like</h4>
+      <img src = "https://pbs.twimg.com/media/CQfr6adVEAA2KHJ.jpg" alt = "harambe" width = "500" height = "500"/>
+      </div>
+    </body>
