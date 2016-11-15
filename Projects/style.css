@@ -7,4 +7,9 @@ td{
   border:solid;
 }
 
+tr{
+  font-family:"Comic Sans MS", cursive, sans-serif;
+  color:black;
+  font-size:16px;
+}
 
