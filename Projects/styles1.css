@@ -1,6 +1,7 @@
 #header{
   display:block;
   margin:auto;
+  position:fixed;
   width:40%;
 }
 pre{color:red;}
