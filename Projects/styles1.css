@@ -5,8 +5,12 @@
   height:100px;
   position:fixed;
 }
-pre{
-  color:red;
+#tabl{
+  border:solid;
+}
+p{
+  color:black;
+  font-weight:bold;
 }
 #pref{
   position:relative;
