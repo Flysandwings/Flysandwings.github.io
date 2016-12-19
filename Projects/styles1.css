@@ -1,8 +1,9 @@
 #header{
-  display:block;
-  margin-right:25%;
-  margin-left:25%;
   position:fixed;
 }
-pre{color:red;}
-#pref{position:relative;}
+pre{
+  color:red;
+}
+#pref{
+  position:relative;
+}
