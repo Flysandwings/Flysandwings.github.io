@@ -8,6 +8,7 @@
 }
 #tabl{
   position:relative;
+  border:solid;
 }
 td{
   border:solid;
