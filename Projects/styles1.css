@@ -9,17 +9,14 @@
 #tabl{
   position:relative;
   border:solid;
-  width:90%;
+  width:100%;
 }
 .rel{
   position:relative;
 }
-tr{
-  width:89%;
-}
 td{
   border:solid;
-  min-width:9%;
+  width:9%;
 }
 p{
   color:black;
