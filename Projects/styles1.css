@@ -10,6 +10,7 @@
   position:relative;
   border:solid;
   width:100%;
+  padding:1px;
 }
 #cen{
   display:block;
