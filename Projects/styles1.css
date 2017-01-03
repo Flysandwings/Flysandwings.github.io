@@ -9,13 +9,13 @@
 #tabl{
   position:relative;
   border:solid;
-  width:100%;
+  width:90%;
 }
 .rel{
   position:relative;
 }
 tr{
-  width:100%;
+  width:90%;
 }
 td{
   border:solid;
