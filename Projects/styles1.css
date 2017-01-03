@@ -11,6 +11,10 @@
   border:solid;
   width:100%;
 }
+#cen{
+  display:block;
+  text-align:center;
+}
 table{
   width:100%;
 }
