@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blazikin</title>
+
+<link href="PokemonProject.css" rel="stylesheet" type="text/css">
+
+<script src="respond.min.js"></script>
+<script>
+function test(){
+	if(window.innerWidth <= 481){
+		document.getElementById("txt").innerHTML ="<p>Torchic</p>";
+		document.getElementById("desc").innerHTML ="<p>Torchic is a small, chick Pokémon with stubby, downy, yellow wings. Its body is covered with orange feathers. There is an orange and yellow crest on its head that resembles a flame. Its two thin legs and short beak of are a light brownish yellow, and the feet have three toes in front and one in the back. A male Torchic will have a small black speck on its rear that is not present in females. Somewhere in its belly, this Pokémon has a place where it keeps a flame. This internal flame causes Torchic to feel warm if hugged. When attacked, it will shoot fireballs of 1,800 °F (1,000 °C) at its foes, leaving them scorched black. It dislikes darkness, as it cannot see its surroundings. Torchic will follow its Trainer with unsteady steps. While Torchic is rarely found in the wild, it is known to inhabit grasslands.</p>";
+	}else if(window.innerWidth < 769){
+		document.getElementById("txt").innerHTML ="<p>Combusken</p>";
+		document.getElementById("desc").innerHTML="<p>Combusken is a bipedal, chicken-like Pokémon. Most of Combusken's upper body is yellow, while most of the lower body is orange. An orange, pointed design adorns the center of its waist at the dividing line of the two colors. It has orange eyes and short, wide beak. There is a feather crest on top of its head with three orange points. This crest is smaller on female Combusken. Its tail is short and pointed. It has three, sharp claws at the ends of its long arms, and scaly, gray legs with well-developed thighs covered in shaggy feathers. Because of the training Combusken does by running through its grassland habitat, these legs are capable of delivering a barrage of kicks. While it is fighting, it is noisy and produces sharp cries that distract and intimidate its opponent.</p>";
+	}else{
+		document.getElementById("txt").innerHTML ="<p>Blazikin</p>";
+		document.getElementById("desc").innerHTML ="<p>Blaziken is a bipedal, chicken-like Pokémon. The majority of Blaziken's body is red with accents of beige, yellow, and gray. Behind its head, there are beige, hair-like feathers that continue downward and surround its chest and abdomen. It has a small red face with a V-shaped crest on its head. Blaziken's blue eyes are semicircular with yellow sclerae, and its mouth is similar to hooked beak. It has featherless, gray hands with three fingers each, and three clawed toes that are not normally visible due to the shaggy, yellow feathers on the bottom of its legs. A female has a shorter mask and hair than a male. Blaziken has strong, muscular legs that give it great lower body strength. This lower body strength helps its kicking and jumping abilities. Blaziken's wrists have gray wristband-like markings capable of producing a tuft of fire above them. Blaziken can also make flames spout from its ankles. This allows it to cloak its feet or fists, and it uses these abilities while practicing a form of martial art. These combined abilities allow it to use its former signature move, Blaze Kick. Its flames burn more intensely when it faces stronger opponents. Every several years, its old feathers burn off, and new, supple feathers grow back in their place. While Blaziken is rarely found in the wild, it is known to inhabit grasslands. As Mega Blaziken, it loses its yellow markings, and gains black markings on its upper legs and chest. Its hair-like feathers take on a wing-like shape and point upward, and the portion around its chest is rough around its shoulders. The crest on its head changes into a flat horn that curves backward. The fire it creates on its wrists is now longer as well. When Blaziken Mega Evolves into Mega Blaziken, it further hones the power of its kicks, always a source of pride to it. As it unleashes a flurry of savage kicks, its legs can begin to burn from the friction of the surrounding atmosphere. As Mega Blaziken’s body temperature increases, its power and speed continue to ramp up</p>";
+	}
+}
+
+</script>
+</head>
+<body onLoad="test()">
+	<div class="gridContainer clearfix">
+		<div id="LayoutDiv1">
+    		<div class="photo"></div>
+    		<div id="txt"></div>
+			<div class="photo2"></div>
+		</div>
+      <div class="gridContainer clearfix">
+  			<div id="battleImg" class="battlePic"></div>
+            <div id="desc"></div>
+      </div>
+      <div>
+      		<div id="m1"><img src="hqdefault3.png" width=100%></div>
+            <div id="t1"><img src="hqdefult2.png" width=100%></div>
+            <div id="d1"><img src="hqdefault.png" width=100%></div>
+      </div>
+    </div>
+</body>
+</html>
