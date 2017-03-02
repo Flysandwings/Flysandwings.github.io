@@ -1,0 +1,32 @@
+#header{
+  width:100%;
+  margin:0px;
+  border:0px;
+  padding:0px;
+  height:auto; 
+  position:relative;
+}
+#tabl{
+  position:relative;
+  border:solid;
+  width:100%;
+  padding:1px;
+}
+#cen{
+  display:block;
+  text-align:center;
+}
+table{
+  width:100%;
+}
+.rel{
+  position:relative;
+}
+td{
+  border:solid;
+  width:9%;
+}
+p{
+  color:black;
+  font-weight:bold;
+}
