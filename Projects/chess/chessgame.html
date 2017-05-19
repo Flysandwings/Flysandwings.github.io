@@ -1,0 +1,144 @@
+
+<!doctype html>
+<html class="">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chess</title>
+
+<link href="htmlgame.css" rel="stylesheet" type="text/css">
+<script src="respond.min.js"></script>
+<script>
+
+function highlightSpaces(currentPosition) {
+	//onClick, show spaces it can go
+	//if pawncurrent exsists in row b || g
+	
+	var saveSource = document.getElementById("highlight").src; //saves the img 'highlight.jpg'
+	//if pawn == clicked
+	currentPosition = parseInt(currentPosition) - 10;
+	document.getElementById(currentPosition).innerHTML = "<img id=F2 src=\"" + saveSource+"\">";
+	currentPosition = parseInt(currentPosition) - 10;
+	document.getElementById(currentPosition).innerHTML = "<img id=E2 src=\"" + saveSource+"\">";
+	movePawn(currentPosition);
+	//its moving up three because currentposition is - 30, make var for currentPosition? how to hold as var, can I hold as var???!?!?
+
+}
+
+function movePawn(currentPosition) {
+
+	var saveSource = document.getElementById("pawn").src; // Saves the img 'pawn.jpg'	
+	var pawnCurrent = document.getElementById("pawn").id; // ID
+	
+	//Goes to position, erase first instance
+	document.getElementById(currentPosition).innerHTML = "";
+	currentPosition = parseInt(currentPosition) - 10; // Value + 10
+	document.getElementById(currentPosition).innerHTML = "<img id=\""+pawnCurrent+"\" src=\""+saveSource+"\">";
+	
+}
+
+</script>
+</head>
+
+<body>
+	<!-- Img Reference -->
+    
+    <img id="highlight" src="highlight.png"/>
+    
+    <!-- Img Reference End --> 
+    <table>
+        <!-- A -->
+        <tr id="A">
+            <td id="11"class="black">1</td>
+            <td id="12">2</td>
+            <td id="13" class="black">3</td>
+            <td id="14">4</td>
+            <td id="15" class="black">5</td>
+            <td id="16">6</td>
+            <td id="17" class="black">7</td>
+            <td id="18">8</td>
+        </tr>
+        <!-- B -->
+        <tr id="B">
+            <td id="21">1</td>
+            <td id="22" class="black">2</td>
+            <td id="23">3</td>
+            <td id="24" class="black">4</td>
+            <td id="25">5</td>
+            <td id="26" class="black">6</td>
+            <td id="27">7</td>
+            <td id="28" class="black">8</td>
+        </tr>
+        <!-- C -->
+        <tr id="C">
+            <td id="31" class="black">1</td>
+            <td id="32">2</td>
+            <td id="33" class="black">3</td>
+            <td id="34">4</td>
+            <td id="35" class="black">5</td>
+            <td id="36">6</td>
+            <td id="37" class="black">7</td>
+            <td id="38">8</td>
+        </tr>
+        <!-- D -->
+        <tr id="D">
+            <td id="41">1</td>
+            <td id="42" class="black">2</td>
+            <td id="43">3</td>
+            <td id="44" class="black">4</td>
+            <td id="45">5</td>
+            <td id="46"class="black">6</td>
+            <td id="47">7</td>
+            <td id="48" class="black">8</td>    
+        </tr>
+        <!-- E -->
+        <tr id="E">
+            <td id="51" class="black">1</td>
+            <td id="52">2</td>
+            <td id="53" class="black">3</td>
+            <td id="54">4</td>
+            <td id="55" class="black">5</td>
+            <td id="56">6</td>
+            <td id="57"class="black">7</td>
+            <td id="58">8</td>    
+        </tr>
+        <!-- F -->
+        <tr id="F">
+            <td id="61">1</td>
+            <td id="62" class="black">2</td>
+            <td id="63"><img src="onclick.png" id="enemy"></td>
+            <td id="64" class="black">4</td>
+            <td id="65">5</td>
+            <td id="66" class="black">6</td>
+            <td id="67">7</td>
+            <td id="68" class="black">8</td>
+        </tr>
+        <!-- G -->
+        <tr id="G">
+            <td id="71" class="black">1</td>
+            <td id="72" onclick="highlightSpaces(id)"><img id="pawn" src="pawn.png"></td>
+            <td id="73" class="black">3</td>
+            <td id="74">4</td>
+            <td id="75" class="black">5</td>
+            <td id="76">6</td>
+            <td id="77" class="black">7</td>
+            <td id="78">8</td>    
+        </tr
+        ><!-- H -->
+        <tr id="H">
+            <td id="81">1</td>
+            <td id="82" class="black">2</td>
+            <td id="83">3</td>
+            <td id="84" class="black">4</td>
+            <td id="85">5</td>
+            <td id="86" class="black">6</td>
+            <td id="87">7</td>
+            <td id="88" class="black">8</td>    
+        </tr>
+    </table>
+
+</body>
+
+</html>
