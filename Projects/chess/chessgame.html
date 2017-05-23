@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="">
 
@@ -11,32 +10,60 @@
 <link href="htmlgame.css" rel="stylesheet" type="text/css">
 <script src="respond.min.js"></script>
 <script>
-
+//Click on the pawn, currentPosition is the position currently of the pawn I clicked on
 function highlightSpaces(currentPosition) {
-	//onClick, show spaces it can go
-	//if pawncurrent exsists in row b || g
 	
-	var saveSource = document.getElementById("highlight").src; //saves the img 'highlight.jpg'
-	//if pawn == clicked
-	currentPosition = parseInt(currentPosition) - 10;
-	document.getElementById(currentPosition).innerHTML = "<img id=F2 src=\"" + saveSource+"\">";
-	currentPosition = parseInt(currentPosition) - 10;
-	document.getElementById(currentPosition).innerHTML = "<img id=E2 src=\"" + saveSource+"\">";
-	movePawn(currentPosition);
-	//its moving up three because currentposition is - 30, make var for currentPosition? how to hold as var, can I hold as var???!?!?
-
+	//saves the img 'highlight.jpg'
+	var saveSource = document.getElementById("highlight").src;
+	//pawnPass is the int value of the initial position 
+	var pawnPass = parseInt(currentPosition); 
+	
+	//We want to highlight the first space ahead of it. Add onClick function to highlighted space to click on.
+	currentPosition -= 10;
+	document.getElementById(currentPosition).innerHTML = "<img id=\"" + currentPosition + "\" src=\"" + saveSource+"\" onclick=\" + numberOfSpacesAway(" + currentPosition + "," + pawnPass + ")" + "\">";
+	
+	//We want to highlight the second space ahead of it. Add onClick function to highlighted space to click on.
+	var currentPosition1 = currentPosition - 10;
+	document.getElementById(currentPosition1).innerHTML = "<img id=\"" + currentPosition1 + "\" src=\"" + saveSource+"\"onclick=\" + numberOfSpacesAway(" + currentPosition1 + "," + pawnPass + ")" + "\">";
 }
 
-function movePawn(currentPosition) {
+function numberOfSpacesAway(index, current){
+	//62 52
+	//current = 72
+		var spacesAway = 0;
+		if((current-index) > 10){
+			spacesAway = 2;
+			//72 - 52 > 10 move two spaces
+			movePawnStart(current-10,spacesAway);	
+			//current = 20
+		}else{
+			spacesAway = 1;
+			movePawnStart(current,spacesAway);
+			//current=10
+		}
+		//72(currentPos) - currentPosition = 10
+}
+
+function movePawnStart(currentPosition, spacesAway) {
 
 	var saveSource = document.getElementById("pawn").src; // Saves the img 'pawn.jpg'	
 	var pawnCurrent = document.getElementById("pawn").id; // ID
-	
+	var pawnOld = currentPosition; 
 	//Goes to position, erase first instance
-	document.getElementById(currentPosition).innerHTML = "";
-	currentPosition = parseInt(currentPosition) - 10; // Value + 10
-	document.getElementById(currentPosition).innerHTML = "<img id=\""+pawnCurrent+"\" src=\""+saveSource+"\">";
-	
+	if(spacesAway == 1){
+		document.getElementById(currentPosition).innerHTML = "";
+		currentPosition = parseInt(currentPosition) - 10; // Value + 10
+		document.getElementById(currentPosition).innerHTML = "<img id=\""+pawnCurrent+"\" src=\""+saveSource+"\">";
+		currentPosition -= 10;
+		document.getElementById(currentPosition).innerHTML = "";
+	}else{
+		document.getElementById(currentPosition).innerHTML = "";
+		currentPosition = parseInt(currentPosition) - 10; // Value + 10
+		document.getElementById(currentPosition).innerHTML = "<img id=\""+pawnCurrent+"\" src=\""+saveSource+"\">";
+		currentPosition += 20;
+		document.getElementById(currentPosition).innerHTML = "";
+		
+	}
 }
 
 </script>
