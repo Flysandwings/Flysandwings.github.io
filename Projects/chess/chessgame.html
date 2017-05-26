@@ -13,18 +13,18 @@
 function highlightSpaces(currentPosition) {
 	
 	//saves the img 'highlight.jpg'
-	var saveSource = document.getElementById("highlight").src;
+	var saveSource = document.getElementById("highImg").src;
 	//pawnPass is the int value of the initial position 
 	var pawnPass = parseInt(currentPosition); 
 	
 	//We want to highlight the first space ahead of it. Add onClick function to highlighted space to click on.
 	currentPosition -= 10;
-	document.getElementById(currentPosition).innerHTML = "<img id=\"" + currentPosition + "\" src=\"" + saveSource+"\" onclick=\" + numberOfSpacesAway(" + currentPosition + "," + pawnPass + ")" + "\">";
+	document.getElementById(currentPosition).innerHTML += "<img id=\"" + currentPosition + " \" class=\"highlight\" src=\"" + saveSource +"\" onclick=\" + numberOfSpacesAway(" + currentPosition + "," + pawnPass + ")" + "\">";
 	
 	//We want to highlight the second space ahead of it. Add onClick function to highlighted space to click on.
 	if((pawnPass - 70) > 0 && (pawnPass - 70) < 9){
 		var currentPosition1 = currentPosition - 10;
-		document.getElementById(currentPosition1).innerHTML = "<img id=\"" + currentPosition1 + "\" src=\"" + saveSource+"\"onclick=\" + numberOfSpacesAway(" + currentPosition1 + "," + pawnPass + ")" + "\">";
+		document.getElementById(currentPosition1).innerHTML += "<img id=\"" + currentPosition1 + "\" class=\"highlight\" src=\"" + saveSource+"\"onclick=\" + numberOfSpacesAway(" + currentPosition1 + "," + pawnPass + ")" + "\">";
 	}
 }
 function numberOfSpacesAway(index, current){
@@ -43,7 +43,6 @@ function numberOfSpacesAway(index, current){
 		}
 		//72(currentPos) - currentPosition = 10
 }
-
 function pawnAttack(currentPosition/*Eventually with boolean*/){
 	var saveSource = document.getElementById("pawn").src;
 	var pawnCurrent = document.getElementById("pawn").id;
@@ -59,9 +58,9 @@ function movePawn(currentPosition, spacesAway) {
 	var pawnOld = currentPosition; 
 	//Goes to position, erase first instance
 	if(spacesAway == 1){
-		document.getElementById(currentPosition).innerHTML = "";
+		document.getElementById(currentPosition).innerHTML -= "<img id=\"pawn\" src=\"pawn.png\"/>";
 		currentPosition = parseInt(currentPosition) - 10; // Value + 10
-		document.getElementById(currentPosition).innerHTML = "<img id=\""+pawnCurrent+"\" src=\""+saveSource+"\"onclick=\" + highlightSpaces(" + currentPosition + ")" + "\" >";
+		document.getElementById(currentPosition).innerHTML = "<img id=\""+pawnCurrent+"\" src=\""+saveSource+"\"onclick=\" + highlightSpaces(" + currentPosition + ")" + "\" >";//points to highlight
 		currentPosition -= 10;
 		document.getElementById(currentPosition).innerHTML = "";
 	}else{
@@ -73,14 +72,15 @@ function movePawn(currentPosition, spacesAway) {
 		
 	}
 }
+ 
 </script>
-</head>
 
+</head> 
 <body>
 	<!-- Img Reference -->
     
-    <img id="highlight" src="highlight.png"/>
-    
+    <img class="highlight" src="highlight.png"/>
+    <img id="highImg" src="highlight.png"/>
     <!-- Img Reference End --> 
     <table>
         <!-- A -->
@@ -172,7 +172,8 @@ function movePawn(currentPosition, spacesAway) {
             <td id="88" class="black">8</td>    
         </tr>
     </table>
-
+ 
 </body>
-
+ 
 </html>
+
