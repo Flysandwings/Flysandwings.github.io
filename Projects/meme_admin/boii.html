@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Click Words</title>
+</head>
+<body>
+
+<h2>Story Time</h2>
+<h4>Click on the bolded words to change them</h4>
+<p id="ss">There once was a young <b id="ui1" onclick="getUI(id)">noun</b> named <b id="ui2" onclick="getUI(id)">name</b>
+who lived in the enchanted town of <b id="ui3" onclick="getUI(id)">town</b>. Every day he liked
+to eat <b id="ui4" onclick="getUI(id)">food</b>. One day an evil <b id="ui5" onclick="getUI(id)">noun</b> came along and
+stole his <b id="ui6" onclick="getUI(id)">noun</b>. They had an epic battle and <b id="ui7" onclick="getUI(id)">person</b> was
+the winner!
+</p>
+
+<script>
+document.getElementsByTagName("body")[0].style.backgroundColor = "lightblue";
+document.getElementsByTagName("body")[0].style.padding = 100;
+document.getElementsByTagName("h2")[0].style.textAlign = "center";
+document.getElementsByTagName("h4")[0].style.textAlign = "center";
+//onclick function
+function getUI(id){
+	var x = prompt("Enter your word choice:");
+	document.getElementById(id).innerHTML = x;
+}
+</script>
+
+</body>
+</html>
