@@ -1,0 +1,35 @@
+td{
+	color:black;
+	width:200px;
+}
+table{
+	background-color:#ADD8E6;
+	padding-top:0px;
+	padding-left:0px;
+	margin-top:0px;
+	margin-left:0px;
+}
+.a{
+	border-right:solid 1px;
+	border-bottom:solid 1px;
+	padding:0px;
+	text-align:center;
+}
+.b{
+	background-color:#FFA65D;
+	border-right:solid 1px;
+	border-bottom:solid 1px;
+	text-align:center;
+}
+.c{
+	background-color:#E5E4E2;
+	border-right:solid 1px;
+	border-bottom:solid 1px;
+	text-align:center;
+}
+#schedule{
+	width:1200px;
+	height:700px;
+	display:block;
+	margin: 0 auto;
+}

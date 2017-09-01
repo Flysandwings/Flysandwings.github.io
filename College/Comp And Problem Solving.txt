@@ -1,0 +1,12 @@
+Comp Prob Solve Info Domain
+Location: Gosilno Hall
+Teachers Name: Edward Holden
+Textbooks: 
+1) “Big Java: Early Objects” 6thed.by Cay S. Horstmann, Wiley, ISBN 978-1-119-05644-7
+
+Class Materials needed: 
+1) USB
+
+Quick Notes:
+1) Sit up close where you can hear him
+2) Capitalize the names of your classes
