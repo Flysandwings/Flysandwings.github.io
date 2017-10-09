@@ -1,0 +1,48 @@
+DUE FRIDAY WEEK 9
+Files;
+	Project2
+	   | 
+	/assets
+        |     |
+      /CSS  /media
+
+//Must Validate
+//Media query for mobile sites etc.
+
+
+Home
+  index.html
+  1) Origin of internet
+  2) Origin of world wide web
+    - differences between them
+    - early internet technologies
+        email, telnet, SSH, FTP, HTTP, Gopher, browser, 
+        Lynx, Mosaic, hypertext
+
+Internet Pioneers
+  pioneers.html
+  Photo and 4-5 sentances of background info and relavent
+  contributions for each: 
+    - Vannevar Bush, Doug Englebart, Ted Nelson, Steve Jobs /
+    Steve Wozniak, Tim Berners-Lee, Mark Andreessen / Eric Bina,
+    Rob Hartill, Lou Montulli, Vint Cerf, Bob Kahn.
+
+HTTP
+  http.html
+  1) Explains how HTML page is requested by a client and
+  served up by a web server.
+  2) Diagram and a textual description(10-20 sent).
+
+Terminology
+  terminology.html
+  1) Definitions of...
+    - Internet, World Wide Web, hypertext, multimedia,
+    CLI, GUI, HCI, FTP, SSH, HTTP, telnet, HTML, CSS
+      - Should be written in own words.
+
+References
+  references.html
+  - 7 total sources
+  - 3 need to be book/journal sources (online ok)
+  - APA format
+  - Hanging indent.
