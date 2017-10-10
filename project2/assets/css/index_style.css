@@ -35,7 +35,7 @@ ul#navlist li a{
 	height:30px;
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 375px){
 	ul#navlist li a{
 		width:100%;
 		border-bottom:1px solid #fff;
