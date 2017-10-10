@@ -1,28 +1,50 @@
-@media only screen and (max-width: 375px){
+body{
+	margin:0;
+}
 
-	body{
-		margin:0;
-	}
-	ul#navlist{
-		padding:0;
-		margin:0;
-		list-style-type:none;
-		float:left;
-		width:100%;
-	}
+ul#navlist{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	float:left;
+	width:100%;
+}
 
-	ul#navlist li{
-		display:inline;
-	}
+ul#navlist li{
+	display:inline;
+}
 
+ul#navlist li a{
+	float:left;
+	color:#fff;
+	width:12%;
+	background-color:#036;
+	padding:1em 1em;
+	text-decoration:none;
+	border-right:1px solid #fff;
+	text-align:center;
+}
+#title{
+	margin:0px;
+	text-decoration:underline;
+}
+#box{
+	float:left;
+	text-align:center;
+	width:100%;
+	height:30px;
+}
+
+@media only screen and (max-width: 320px){
 	ul#navlist li a{
-		float:left;
-		color:#fff;
 		width:100%;
-		background-color:#036;
-		padding:1em 1em;
-		text-decoration:none;
-		border-bottom:1px solid black;
-		text-align:center;
+		border-bottom:1px solid #fff;
+		padding-top:5px;
+		padding-bottom:5px;
+		padding-left:0;
+		padding-right:0;
+	}
+	#navlist{
+		display:none;
 	}
 }
