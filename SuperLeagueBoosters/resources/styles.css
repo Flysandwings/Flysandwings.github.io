@@ -1,6 +1,6 @@
 body{
 	margin:0;
-	background-color:lime;
+	background-color:black;
 }
 
 div#logo_bar{
@@ -67,7 +67,7 @@ ul#language_dropdown li:hover{
 }
 
 div#nav{
-	background-color:lime;
+	background-color:black;
 	height:120px;
 }
 
@@ -106,7 +106,7 @@ div#pic{
 	background-image: url("./images/victory.png");
 	background-size:cover;
 	background-repeat:no-repeat;
-	background-color:lime;
+	background-color:black;
 	height:800px;
 }
 
